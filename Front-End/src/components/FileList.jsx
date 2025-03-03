@@ -3,7 +3,7 @@
 const FileList = ({ savedFiles }) => {
   return (
     <div>
-      <h1>Your Uploaded Files</h1>
+      <h1>Your Uploaded Files :</h1>
       <ul>
         {savedFiles ? (
           savedFiles.map((file) => {

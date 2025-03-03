@@ -57,8 +57,8 @@ function App() {
   }
 
   return (
-    <div>
-      <h1>File Share Application</h1>
+    <div className="w-[100vw] h-[100vh] -translate-y-14 flex flex-col justify-center items-center gap-10">
+      <h1 className="text-5xl font-bold underline">File Share Application</h1>
       <UploadFile
         handleChange={handleChange}
         handleSubmit={handleSubmit}
@@ -66,7 +66,7 @@ function App() {
         files={files}
       />
       <FileList savedFiles={savedFiles} />
-      <h1>Send By Email</h1>
+      <h1 className="text-3xl font-bold underline">Send By Email</h1>
       <SendByEmail
         handleEmailSubmit={handleEmailSubmit}
         email={email}

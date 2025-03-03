@@ -1,20 +1,20 @@
 /* eslint-disable react/prop-types */
 const SendByEmail = ({ handleEmailSubmit, email, uuid, setEmail, setuuid }) => {
   return (
-    <form action="" onSubmit={handleEmailSubmit}>
-      <input
+    <form className="flex gap-3" action="" onSubmit={handleEmailSubmit}>
+      <input className="border"
         type="text"
         placeholder="Reciever's Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      <input
+      <input className="border"
         type="text"
         placeholder="File UUID"
         value={uuid}
         onChange={(e) => setuuid(e.target.value)}
       />
-      <button type="submit">Send Email</button>
+      <button className="border rounded-md p-1" type="submit">Send Email</button>
     </form>
   );
 };
